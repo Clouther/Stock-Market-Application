@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>{{ticker}} performance </title>
+</head>
+<body>
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<br>
+<h2> Our algorithm's recent performance on {{ticker}} had an accuracy of: <br> </h2>
+<h2>  {{eval_perf}} % <br> <br> </h2>
+<p> Choose another ticker:  </p>
+
+<form method="POST">
+    <input name="text">
+    <input type="submit">
+</form>
+
+<br>
+<a class="btn btn-primary btn-lg" href="/get_portfolio_perf/" role="button"> See performance on entire S&P500 </a> <a class="btn btn-secondary btn-lg" href="/" role="button"> Go back to Home Page </a>
+{% endblock%}
+</body>
+</html>
