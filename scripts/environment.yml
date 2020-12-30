@@ -11,6 +11,7 @@ dependencies:
   - scikit-learn==0.23.2
   - flask==1.1.2
   - joblib=0.16.0
+  - pip
   - pip:
       - requests-html
       - yahoo-fin
