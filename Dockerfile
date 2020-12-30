@@ -18,7 +18,7 @@ ENV PYTHONUNBUFFERED True
 # Copy local code to the container image.
 ENV APP_HOME /app
 WORKDIR $APP_HOME
-COPY stock ./
+COPY . ./
 
 # Create the environment and run the environment:
 RUN conda env create -f scripts/environment.yml
