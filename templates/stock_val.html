@@ -10,24 +10,24 @@
 </head>
 <body>
 
-<!--{% extends "base.html" %}-->
+{% extends "base.html" %}
 
-<!--{% block content %}-->
+{% block content %}
 
 <br>
-<!--<h2>You should {{ goal }} {{ticker}} tomorrow! <br> <br> </h2>-->
-<!--<p> Choose another ticker:  </p>-->
+<h2>You should {{ goal }} {{ticker}} tomorrow! <br> <br> </h2>
+<p> Choose another ticker:  </p>
 
 <h2>{{ goal }}</h2>
 
-<!--<form method="POST">-->
-<!--    <input name="text">-->
-<!--    <input type="submit">-->
-<!--</form>-->
+<form method="POST">
+<input name="text">
+<input type="submit">
+</form>
 
-<!--<br>-->
-<!--<a class="btn btn-primary btn-lg" href="/" role="button"> Go back to Home Page </a>-->
-<!--<a class="btn btn-secondary btn-lg" href="/get_stock_perf/{{ticker}}" role="button"> Get Stock Performance </a>-->
-<!--{% endblock%}-->
+<br>
+<a class="btn btn-primary btn-lg" href="/" role="button"> Go back to Home Page </a>
+<a class="btn btn-secondary btn-lg" href="/get_stock_perf/{{ticker}}" role="button"> Get Stock Performance </a>
+{% endblock%}
 </body>
 </html>
