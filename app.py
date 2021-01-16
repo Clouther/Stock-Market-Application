@@ -64,7 +64,14 @@ def page_not_found(e):
     return render_template("404.html"), 404
 
 
+@app.errorhandler(500)
+def page_not_found(e):
+    return render_template("404.html"), 500
+
+
 if __name__ == '__main__':
     # Used when running locally only. When deploying to Cloud Run,
     # a webserver process such as Gunicorn will serve the app.
     app.run(host='localhost', port=8080, debug=True)
+
+
