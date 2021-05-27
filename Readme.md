@@ -23,7 +23,7 @@ On your machine:
 
 ## Code organisation
 - `application.conf`: This file contains the parametrisation of the app. 
-- `Dockerfile`: This file contains the definition of the steps to create the docker image. The image will be created by google build (CI/CD) and saved into google storage. 
+- `Dockerfile`: Anaconda base, the docker image will be created and run by Cloud Build and Cloud Run
 - `get_data.py`: You can use this script to download the stock history for S&P500
 - `app.py`: This file contains the main for the Flask server.
 - `src/algo`. This directory contains the code to fit and predict stock with a model.
