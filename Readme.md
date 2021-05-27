@@ -7,13 +7,13 @@ Prerequisites:
  
 
 ## Setup steps
-On your Google GCP account:
+Running on GCP:
 1. [Create your project](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
 2. [Get the credentials (json)](https://cloud.google.com/docs/authentication/getting-started) and S=set up the environment variable `GOOGLE_APPLICATION_CREDENTIALS`
 3. Hook your github repo to google build. Allow the trigger for each push.
 
 
-On your machine:
+Running locally:
 1. Fork this repository from your own github account
 2. [Create your environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) using `scripts/environment.yml`.  
 3. Activate the environment. `conda activate stock`
