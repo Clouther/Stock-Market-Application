@@ -2,7 +2,7 @@
 The objectives of the project is to have an end-to-end solution to predict stock price/evolution. 
 
 ## Prerequisites:
-local
+locally:
 - [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) installed
 - [Docker](https://docs.docker.com/get-docker/) installed
  
