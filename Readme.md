@@ -11,7 +11,7 @@ locally:
 Running on GCP:
 1. [Create your project](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
 2. [Get the credentials (json)](https://cloud.google.com/docs/authentication/getting-started) and S=set up the environment variable `GOOGLE_APPLICATION_CREDENTIALS`
-3. Hook your github repo to google build. Allow the trigger for each push.
+3. Hook GitHub repo to google build and allow the trigger for each push.
 
 
 Running locally:
