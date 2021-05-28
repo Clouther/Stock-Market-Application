@@ -15,13 +15,15 @@
 {% block content %}
 
 <br>
+
+{% if ticker != none %}
 <h2>You should {{ goal }} {{ticker}} tomorrow! <br> <br> </h2>
-<p> Choose another ticker:  </p>
+{% endif %}
 
-<h2>{{ goal }}</h2>
+<p> Enter a stock symbol: </p>
 
-<form method="POST">
-<input name="text">
+<form method="GET">
+<input name="ticker">
 <input type="submit">
 </form>
 

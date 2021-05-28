@@ -13,22 +13,19 @@ def hello():
     return render_template("home.html")
 
 
-@app.route('/get_stock_val/<ticker>', methods=['GET', 'POST'])
-def get_stock_value(ticker):
-    if request.method == "GET":
+@app.route('/get_stock_val', methods=['GET'])
+def get_stock_value():
+    ticker = request.args.get("ticker")
+    if ticker is not None:
         bl = create_business_logic()
         prediction = bl.do_predictions_for(ticker)[-1]
-
         if prediction == 1:
             goal = "Buy"
         else:
             goal = "Sell"
-    elif request.method == "POST":
-        text = request.form['text']
-        processed_text = text.upper()
-        return redirect(f"/get_stock_val/{processed_text}", code=302)
-
-    return render_template("stock_val.html", goal=goal, ticker=ticker)
+        return render_template("stock_val.html", goal=goal, ticker=ticker)
+    else:
+        return render_template("stock_val.html", goal=None, ticker=None)
 
 
 @app.route('/get_stock_perf/<ticker>', methods=['GET', 'POST'])
