@@ -3,7 +3,7 @@ The objectives of the project is to have an end-to-end solution to predict tomor
 
 ![Alt text](./static/img/Website.jpg?raw=true "Title")
 
-<u> Next day predictions
+<u> Next day predictions 
 
 ![Alt text](./static/img/Stock_Prediction.jpg?raw=true "Title")
 
