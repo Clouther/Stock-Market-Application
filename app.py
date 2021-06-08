@@ -13,36 +13,31 @@ def hello():
     return render_template("home.html")
 
 
-@app.route('/get_stock_val/<ticker>', methods=['GET', 'POST'])
-def get_stock_value(ticker):
-    if request.method == "GET":
+@app.route('/get_stock_val', methods=['GET'])
+def get_stock_value():
+    ticker = request.args.get("ticker")
+    if ticker is not None:
         bl = create_business_logic()
         prediction = bl.do_predictions_for(ticker)[-1]
-
         if prediction == 1:
             goal = "Buy"
         else:
             goal = "Sell"
-    elif request.method == "POST":
-        text = request.form['text']
-        processed_text = text.upper()
-        return redirect(f"/get_stock_val/{processed_text}", code=302)
-
-    return render_template("stock_val.html", goal=goal, ticker=ticker)
+        return render_template("stock_val.html", goal=goal, ticker=ticker)
+    else:
+        return render_template("stock_val.html", goal=None, ticker=None)
 
 
-@app.route('/get_stock_perf/<ticker>', methods=['GET', 'POST'])
-def get_stock_perf(ticker):
-    if request.method == "GET":
+@app.route('/get_stock_perf', methods=['GET'])
+def get_stock_perf():
+    ticker = request.args.get("ticker")
+    if ticker is not None:
         bl = create_business_logic()
         eval = bl.do_eval_for(ticker)
-        eval_perf = round(eval*100,2)
-    elif request.method == "POST":
-        text = request.form['text']
-        processed_text = text.upper()
-        return redirect(f"/get_stock_perf/{processed_text}", code=302)
-
-    return render_template("stock_perf.html", eval_perf=eval_perf, ticker=ticker)
+        eval_perf = round(eval*100, 2)
+        return render_template("stock_perf.html", eval_perf=eval_perf, ticker=ticker)
+    else:
+        return render_template("stock_perf.html", eval_perf=None, ticker=None)
 
 
 @app.route('/get_portfolio_perf/', methods=['GET'])
