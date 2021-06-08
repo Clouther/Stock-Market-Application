@@ -1,11 +1,21 @@
 # Stock project
-The objectives of the project is to have an end-to-end solution to predict stock price/evolution. 
+The objectives of the project is to have an end-to-end solution to predict stock price/evolution for the S&P500. 
+
+![Alt text](./static/img/Website.jpg?raw=true "Title")
+
+Next day predictions:
+
+![Alt text](./static/img/Stock Prediction.jpg?raw=true "Title")
+
+Prediction performance:
+
+![Alt text](./static/img/Stock Performance.jpg?raw=true "Title")
 
 ## Prerequisites:
 locally:
 - [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) installed
 - [Docker](https://docs.docker.com/get-docker/) installed
- 
+
 
 ## Setup steps
 Running on GCP:
