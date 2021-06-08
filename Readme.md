@@ -1,4 +1,4 @@
-# Stock project
+# Using Machine Learning to predict on S&P500
 The objectives of the project is to have an end-to-end solution to predict tomorrow movement of stocks in the S&P500 stock. 
 
 ![Alt text](./static/img/Website.jpg?raw=true "Title")
