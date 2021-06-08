@@ -5,11 +5,11 @@ The objectives of the project is to have an end-to-end solution to predict stock
 
 Next day predictions:
 
-![Alt text](./static/img/Stock Prediction.jpg?raw=true "Title")
+![Alt text](./static/img/Stock_Prediction.jpg?raw=true "Title")
 
 Prediction performance:
 
-![Alt text](./static/img/Stock Performance.jpg?raw=true "Title")
+![Alt text](./static/img/Stock_Performance.jpg?raw=true "Title")
 
 ## Prerequisites:
 locally:
