@@ -15,12 +15,14 @@
 {% block content %}
 
 <br>
+{% if ticker != none %}
 <h2> Our algorithm's recent performance on {{ticker}} had an accuracy of: <br> </h2>
 <h2>  {{eval_perf}} % <br> <br> </h2>
-<p> Choose another ticker:  </p>
+{% endif %}
+<p> Enter a stock symbol to see our algorithm's recent performance:  </p>
 
-<form method="POST">
-    <input name="text">
+<form method="GET">
+    <input name="ticker">
     <input type="submit">
 </form>
 
