@@ -3,11 +3,11 @@ The objectives of the project is to have an end-to-end solution to predict tomor
 
 ![Alt text](./static/img/Website.jpg?raw=true "Title")
 
-Next day predictions:
+<b> Next day predictions:
 
 ![Alt text](./static/img/Stock_Prediction.jpg?raw=true "Title")
 
-Model performance over the past 10 business days:
+Model performance over the past 10 business days: </b>
 
 ![Alt text](./static/img/Stock_Performance.jpg?raw=true "Title")
 
