@@ -1,5 +1,5 @@
 # Stock project
-The objectives of the project is to have an end-to-end solution to predict stock price/evolution for the S&P500. 
+The objectives of the project is to have an end-to-end solution to predict tomorrow movement of stocks in the S&P500 stock. 
 
 ![Alt text](./static/img/Website.jpg?raw=true "Title")
 
@@ -7,7 +7,7 @@ Next day predictions:
 
 ![Alt text](./static/img/Stock_Prediction.jpg?raw=true "Title")
 
-Prediction performance:
+Prediction performance (over the past 10 business days):
 
 ![Alt text](./static/img/Stock_Performance.jpg?raw=true "Title")
 
