@@ -34,12 +34,12 @@ Running locally:
 
 ## Code organisation
 - `application.conf`: This file contains the parametrisation of the app. 
-- `Dockerfile`: Anaconda base, the docker image will be created and run by Cloud Build and Cloud Run
+- `Dockerfile`: Anaconda base, the docker image is currently deployed on GCP
 - `get_data.py`: You can use this script to download the stock history for S&P500
 - `app.py`: This file contains the main for the Flask server.
 - `src/algo`. This directory contains the code to fit and predict stock with a model.
-- `src/business_logic`. This code contains the logic to process the query, deal with model storage
-- `src/IO`. This code deal with fetching the data, accessing the google storage, etc.
+- `src/business_logic`. Processes the query, deals with model storage
+- `src/IO`. Fetches data, accessing the google storage, etc.
 
 
 
