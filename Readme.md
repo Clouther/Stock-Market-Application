@@ -7,14 +7,14 @@ Next day predictions:
 
 ![Alt text](./static/img/Stock_Prediction.jpg?raw=true "Title")
 
-Prediction performance (over the past 10 business days):
+Model performance over the past 10 business days:
 
 ![Alt text](./static/img/Stock_Performance.jpg?raw=true "Title")
 
 ## Prerequisites:
 locally:
 - [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) installed
-- [Docker](https://docs.docker.com/get-docker/) installed
+- [Docker Desktop](https://docs.docker.com/get-docker/) installed
 
 
 ## Setup steps
