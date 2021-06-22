@@ -27,7 +27,7 @@ Running on GCP:
 Running locally:
 1. Fork this repository from your own github account
 2. [Create your environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) using `scripts/environment.yml`.  
-3. Activate the environment. `conda activate stock`
+3. Activate the environment using `conda activate stock`
 4. Run the app: `python app.py` 
 5. Test the endpoint in a separated shell `curl http://localhost:8080/`
 
