@@ -12,7 +12,7 @@ The objectives of the project is to have an end-to-end solution to predict tomor
 ![Alt text](./static/img/Stock_Performance.jpg?raw=true "Title")
 
 ## Requirements
-locally:
+Running locally:
 - [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) installed
 - [Docker Desktop](https://docs.docker.com/get-docker/) installed
 
